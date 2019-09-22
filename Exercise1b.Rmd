@@ -1,0 +1,38 @@
+---
+title: "Exercise1b"
+author: "Alexander Schanne"
+date: "September 21, 2019"
+output: html_document
+---
+
+
+```{r pressure, echo=FALSE}
+
+library(ggplot2)
+
+set.seed(42)
+
+sim <- data.frame(1:100) # creating data frame for simulated data
+
+
+sim[,2] <- rlnorm(100, meanlog = 1, sd = 0.25) # simulatig data poits
+
+# ggplot without log-scale
+
+ggplot(sim, aes(sim[,2])) + geom_histogram(bins=30) + theme_grey() + labs(x = 'log(norm) sample values') + ggtitle('100 simulated points from log(norm) distribution, mean=1, sd=0.25')
+
+## ggplot with log-scale
+
+ggplot(sim, aes(log(sim[,2]))) + geom_histogram(bins=30) + theme_grey() + labs(x = 'log(norm) sample values') + ggtitle('100 simulated points from log(norm) distribution, mean=1, sd=0.25')
+
+# calculating moments
+
+mean(sim[,2])  # mean = -0.034
+
+sd(sim[,2])  # sd = 0.31
+
+
+
+```
+
+
