@@ -5,7 +5,7 @@
 
 ### Check out this jellyfish!
 
-![What a pretty jellyfish](https://github.com/sta426hs2019/exercise-1-github-rmarkdown-Alexander-Syn/edit/master/jelly)
+![What a pretty jellyfish](https://github.com/sta426hs2019/exercise-1-github-rmarkdown-Alexander-Syn/blob/master/jelly.jpg)
 
 
 <br><br>
